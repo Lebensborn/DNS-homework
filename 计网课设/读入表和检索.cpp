@@ -11,7 +11,7 @@
 #include <fstream>
 #include <iomanip>
 #include "查询域名.h"
-
+using namespace std;
 int DNS_TABLE_READIN(char* filename);
 void URL_READIN(char* recvbuf, int recvnum);
 int DOMAIN_MATCH(char* URL, int num);
@@ -182,7 +182,7 @@ void PRINT_INFO(unsigned short NewID, int flag)
 			cout << "    ";
 			//打印域名
 			cout.setf(ios::left);
-			cout << "*" << setiosflags(ios::left) << setw(19) << setfill(' ') << url;
+			cout << "*" << setiosflags(ios::left) << setw(19) << setfill(' ') << URL;
 			cout << "    ";
 			//打印IP
 			cout.setf(ios::left);
