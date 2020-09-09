@@ -12,6 +12,7 @@
 #include <iomanip>
 #include "≤È—Ø”Ú√˚.h"
 using namespace std;
+#pragma  comment(lib, "Ws2_32.lib") 
 int DNS_TABLE_READIN(char* filename);
 void URL_READIN(char* recvbuf, int recvnum);
 int DOMAIN_MATCH(char* URL, int num);
